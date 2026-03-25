@@ -1,0 +1,10 @@
+{
+  "name": "Encanta — Contenido Faceless Premium",
+  "short_name": "Encanta",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#0a0608",
+  "background_color": "#0a0608",
+  "icons": []
+}

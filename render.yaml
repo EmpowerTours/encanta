@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: encanta
+    runtime: node
+    region: oregon
+    plan: starter
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NEXT_PUBLIC_ENCANTA_CONTRACT
+        sync: false
+      - key: NEXT_PUBLIC_MONAD_RPC
+        value: https://rpc.monad.xyz
+      - key: NEXT_PUBLIC_SUBSCRIPTION_PRICE
+        value: "100"
+      - key: NEXT_PUBLIC_API_URL
+        sync: false
+    autoDeploy: true
